@@ -15,7 +15,7 @@ Paddle-Paddle 딥러닝 프레임워크 기반 Robert 사전 학습모델(Pre-tr
 <br>
 <P>
 
-<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146803095-f3548a6f-032a-4c47-a005-843c1e710faf.png' height=60% width=60%></div> <P>
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146803095-f3548a6f-032a-4c47-a005-843c1e710faf.png' height=60% width=60%></div> </P>
 
 
 - Robert 사전 학습모델?
@@ -40,13 +40,25 @@ Paddle-NLP에서 제공하고 있는 Robert 사전 학습모델을 사용하여(
 
 <P>
   
-<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146805836-5d752e88-b7c9-4baf-b7ec-0fee8031cd3e.png' height=50% width=50%></div> <P>
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146805836-5d752e88-b7c9-4baf-b7ec-0fee8031cd3e.png' height=50% width=50%></div> </P>
 
 중국 SNS 플랫폼인 新浪微博(시나 웨이보) 출처 데이터로서, "과학기술, 체육, 엔터테인먼트, 정치, 사회, 교육 등 14개의 카테고리의 주제 기사가 포함된 약 83만개(학습/검증), 84,000개(테스트)의 데이터로 구성되어 있다. 주제 다중 분류를 수행하는 본 프로젝트에 데이터로 사용하기에 적절하다고 판단해 해당 데이터를 사용하여 프로젝트를 수행했다.
 
 ### 데이터 미리보기
 
-<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146806493-718b566f-eaa3-4f76-be4a-16bdccc130af.png' height=40% width=40%></div> <P>
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146806493-718b566f-eaa3-4f76-be4a-16bdccc130af.png' height=40% width=40%></div> </P>
 
 - 데이터 설명 : 학습/검증/테스트로 구성된 데이터로서, 학습-검증 데이터는 기사글과 대응하는 신문 주제 카테고리로 구성되어 있으며, 테스트 데이터는 라벨값이 포함되어 있지 않다. 
 
+## 6. 프로젝트 분석 방법 
+
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146808785-528e872f-8454-48b6-a008-615d9491afd8.png' height=60% width=60%></div> </P>
+
+분석 방법 : 프로젝트 데이터를 모델링 적용을 위해 Robert 사전 학습모델을 통해 토크나이징, SequenceClassification 등의 전처리 과정을 거친 후, 사전 학습 모델을 적용한 모델링을 통해 데이터를 학습시키고 모델 성능 지표로서 모델 정확도와 로스값을 사용하여 결과 분석을 하고 학습된 모델을 실제 테스트 데이터에 적용하므로써, 다중 분류값(신문 주제 카테고리)을 테스트 데이터에 매칭시켜 결과값을 확인하고 평가한다. 
+  
+## 7. 프로젝트 결과 분석
+
+학습 데이터를 통한 모델링 및 검증 데이터를 통한 모델 평과 결과 검증 데이터에 대한 모델 정확도는 0.96206, 로스값은 0.11553로 비교적 높게 나왔으며 이를 테스트 데이터에 다중 분류값을 매칭시켜 분류값이 정확하게 구성되었는지 평가한다. 아래의 그림은 테스트 데이터에 타겟 변수값을 매칭시킨 상위 20개의 실제 데이터 값이다.  
+
+<P>  
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146808397-f4778b41-81ce-4022-afd3-c75ebd18b4ef.png' height=30% width=30%></div> </P>
