@@ -12,17 +12,22 @@ Paddle-Paddle 딥러닝 프레임워크 기반 Robert 사전 학습모델(Pre-tr
   패들패들(飞桨)이란 중국 바이두(百度)에서 개발한 딥러닝 프레임워크이다.
   <br>
   (공식 사이트 : http://www.paddlepaddle.org)
-
- 
-- Robert 사전 학습모델?
-
+<br>
 <P>
 
-<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146803095-f3548a6f-032a-4c47-a005-843c1e710faf.png' height=50% width=50%></div> <P>
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146803095-f3548a6f-032a-4c47-a005-843c1e710faf.png' height=60% width=60%></div> <P>
+
+
+- Robert 사전 학습모델?
   
+  Paddle-NLP에서 제공하는 사전 학습 언어 모델로서, Tokenizer와 타겟 변수 클래스 분류를 위한 SequenceClassification 기능을 수행한다.   
+
+ 
+## 2. 프로젝트 개요
+
+Paddle-NLP에서 제공하고 있는 Robert 사전 학습모델을 사용하여(사전 학습모델을 사용하므로써, 모델링 간 모델의 성능을 향상시킬 수 있다) 14개의 클래스로 구성된 타겟 변수(신문 주제 카테고리)에 대해 주어진 기사글(특성 변수)-타겟 변수 간 다중 분류값을 모델 학습시키고 실제 테스트 데이터를 통해 예측할 수 있다.  
   
 
   
   
-  下表汇总了目前PaddleNLP支持的各类预训练模型。用户可以使用PaddleNLP提供的模型，完成问答、序列分类、token分类等任务。同时还提供了22种预训练的参数权重供用户使用，其中包含了11种中文语言模型的预训练权重。
  
