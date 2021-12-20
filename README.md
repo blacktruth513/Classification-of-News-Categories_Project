@@ -5,5 +5,12 @@ Paddle-Paddle 딥러닝 프레임워크 기반 Robert 사전 모델(Pre-trained 
 
 <P>
 
-<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146801028-b26eec72-c1c3-4e3e-beba-44ef8d60f3b9.png' height=40% width=40%></div> <P>
+<div align="center"><IMG src='https://user-images.githubusercontent.com/78430460/146801028-b26eec72-c1c3-4e3e-beba-44ef8d60f3b9.png' height=30% width=30%></div> <P>
 
+- Paddle-Paddle?
+
+  패들패들(飞桨)이란 중국 바이두(百度)에서 개발한 딥러닝 프레임워크이다.
+  <br>
+  (공식 사이트 : http://www.paddlepaddle.org)
+  
+ 
